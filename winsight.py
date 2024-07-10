@@ -17,9 +17,9 @@ from streamlit_option_menu import option_menu
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
-diabetes_model = pickle.load(open('C:/Users/OneDrive/Desktop/multiplediseaes/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('C:/Users/OneDrive/Desktop/multiplediseaes/heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open('C:/Users/OneDrive/Desktop/multiplediseaes/parkinsons_model.sav', 'rb'))
+diabetes_model = pickle.load(open(f'{working_dir}/diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open(f'{working_dir}/heart_disease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(f'{working_dir}/parkinsons_model.sav', 'rb'))
 
 
 def chitta():
